@@ -36,7 +36,8 @@ if (['production' , 'ci'].includes(process.env.NODE_ENV)) {
     res.sendFile(path.resolve('client', 'build', 'index.html'));
   });
 }
-
+console.log(process.env.NODE_ENV);
+console.log(process.env.PORT);
 const PORT = process.env.PORT || 6000;
 app.listen(PORT, () => {
   console.log(`Listening on port`, PORT);
