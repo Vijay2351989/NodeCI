@@ -5,7 +5,7 @@ let page;
 beforeEach(async () => {
   page = await Page.build();
   //if (['production' , 'ci'].includes(process.env.NODE_ENV)) {
-  await page.goto('http://localhost:3000/blogs');
+  await page.goto('http://localhost:3000');
 //}
 //else {
   //await page.goto('localhost:3010/blogs');
