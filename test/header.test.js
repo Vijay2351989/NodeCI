@@ -6,6 +6,8 @@ let page;
 beforeEach(async () =>  {
   page = await Page.build();
   //if (['production' , 'ci'].includes(process.env.NODE_ENV)) {
+  console.log(process.env.NODE_ENV);
+  console.log(process.env.PORT);
   await page.goto('http://localhost:3000');
 //}
 //else {
